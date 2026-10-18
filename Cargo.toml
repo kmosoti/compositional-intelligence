@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2"
+members = ["crates/ci-core", "crates/ci-eval"]
+
+[workspace.package]
+edition = "2024"
+version = "0.0.0"
+publish = false
+license = "MIT"

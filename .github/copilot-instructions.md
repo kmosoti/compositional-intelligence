@@ -1,0 +1,1 @@
+Read /AGENTS.md as the canonical operating contract. Treat the project as pre-experimental Rust-first research. Prefer competitive baselines, small reversible changes, independent verification and evidence-backed conclusions. Explore skills in /.agents/skills/ as relevant.

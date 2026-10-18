@@ -1,0 +1,29 @@
+{
+  "id": "EXP-0001",
+  "status": "planned",
+  "hypothesis": "HYP-0001",
+  "question": "Does adding retrieval improve held-out task success per unit compute over a quantized SLM and deterministic tools?",
+  "baseline": "SLM+tools",
+  "candidate": "SLM+lexical/dense retrieval+tools",
+  "metrics": [
+    "task_success",
+    "transfer_success",
+    "latency_ms",
+    "peak_gpu_bytes",
+    "peak_host_bytes",
+    "energy_if_measurable"
+  ],
+  "dataset": {
+    "source": "TBD",
+    "split_hash": "TBD",
+    "holdout": "TBD"
+  },
+  "protocol": {
+    "random_seeds": [],
+    "sample_count": null,
+    "resource_caps": "TBD",
+    "pre_registered": false
+  },
+  "results": null,
+  "notes": "Planning scaffold, not executed."
+}
