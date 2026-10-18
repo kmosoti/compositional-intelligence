@@ -25,7 +25,12 @@ pub struct Claim {
 
 impl Claim {
     pub fn new(id: u64, kind: ClaimKind, text: String, support: Vec<EvidenceId>) -> Self {
-        Self { id, kind, text, support }
+        Self {
+            id,
+            kind,
+            text,
+            support,
+        }
     }
 }
 
@@ -34,7 +39,12 @@ mod tests {
     use super::*;
     #[test]
     fn preserves_provenance_and_claim_kind() {
-        let c = Claim::new(7, ClaimKind::Hypothesis, "Possible relation".to_owned(), vec![EvidenceId(5)]);
+        let c = Claim::new(
+            7,
+            ClaimKind::Hypothesis,
+            "Possible relation".to_owned(),
+            vec![EvidenceId(5)],
+        );
         assert_eq!(c.kind, ClaimKind::Hypothesis);
         assert_eq!(c.support, vec![EvidenceId(5)]);
     }
