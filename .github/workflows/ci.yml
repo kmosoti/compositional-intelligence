@@ -19,4 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 scripts/check_research.py
+      - run: python3 -B scripts/check_research.py
+      - run: python3 -B scripts/check_coordination.py
+      - run: python3 -B scripts/check_coordination.py --examples
+      - run: python3 -B -m unittest discover -s tests -v

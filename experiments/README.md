@@ -1,6 +1,6 @@
 # Experiment registry
 
-Start with a preregistered protocol and baseline. Store manifests without claiming execution. Results must include machine/software identifiers, dataset hashes, seeds, raw outcomes, baseline and candidate costs, uncertainties and negative findings.
+Define a protocol and baseline; preregister confirmatory comparisons and label exploratory work explicitly. Store manifests without claiming execution. Results must include machine/software identifiers, dataset hashes, seeds, raw outcomes, baseline and candidate costs, uncertainties and negative findings.
 
 Planned experiment manifests use `status: planned`. No result files exist yet.
 
@@ -12,3 +12,5 @@ Planned experiment manifests use `status: planned`. No result files exist yet.
 | [EXP-0004](EXP-0004/manifest.json) | [Retained competence](EXP-0004/protocol.md) | Planned; learner, retained state, assignment, and evaluation schedule must be frozen |
 
 An ID does not mean preregistration or execution. Exploratory pilots may resolve feasibility and protocol choices, but their data are not reused as unseen confirmatory evidence. Freeze a comparison, not the project's future architecture. See the [research program](../docs/research-program.md).
+
+The [manifest and coordination guide](../harness/coordination/README.md) documents the common lifecycle/result structure checked in CI. Completed negative, inconclusive, and exploratory results are permitted when honestly recorded. Structural validity does not establish independent acceptance or scientific adoption.

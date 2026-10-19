@@ -63,6 +63,19 @@ Role files under `.agents/roles/` are task profiles: investigator, implementer, 
 
 Use a bounded write scope, disposable worktree or container, and controller-owned tests where available. Worktrees alone are **not** a security sandbox. A failed attempt's patch and test evidence must be retained before discarding its disposable workspace. Never run destructive cleanup in the user's main working tree.
 
+## Research coordination
+
+Follow [the coordination contract](docs/coordination.md) when work spans agents, attempts, shared resources, or material research decisions. The current mode is manual coordination with offline consistency checks. The coordinator acts within existing controller authority; this adds no new permission or permanent cognitive hierarchy.
+
+- Bind acceptance to the exact task specification, candidate, protocol, evaluator, inputs, environment, and analysis where relevant. Preserve earlier versions and their observations.
+- Keep progress, technical assessment, scientific outcome, disposition, and architectural adoption separate. A negative or inconclusive result can complete accepted research.
+- Preserve reviewed coordination records in version control. Project fields and comments report that record; closure, labels, timestamps, hashes, and actor-name strings do not confer authority.
+- Identify conflicting resources across task IDs and assign one integrator for accepted changes. Current reservations are cooperative, not enforced leases.
+- Distinguish hold/stop requests, acknowledgement, confirmed termination, and unresolved external effects. A stopped worker can still have an earlier external operation in flight.
+- Validate the complete relevant record collection. Do not select a conflicting revision by timestamp, reuse an operation ID for changed content, or transfer old acceptance to a changed subject.
+
+Keep records proportionate: a routine fix does not require an invented experiment. Synthetic examples are demonstrations only. A successful checker does not authenticate actors, validate external evidence, stop workers, or deploy a GitHub Project.
+
 ## Completion report
 
 State what changed; what tests were **actually** executed; results, baseline comparisons, limitations and unresolved risks; then the next highest-information experiment. A failure or rejected hypothesis can be a valuable completed research outcome.

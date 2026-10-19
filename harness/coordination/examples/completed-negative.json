@@ -1,0 +1,267 @@
+{
+  "demonstration": true,
+  "description": "Synthetic complete-negative research trace for checking workflow semantics. It contains no task assignment, run, benchmark, or scientific evidence.",
+  "records": [
+    {
+      "assessment": null,
+      "binding": null,
+      "blockers": [],
+      "control": {
+        "hold_requested": false,
+        "resolution_receipt": null,
+        "stop_acknowledged": false,
+        "stop_confirmed": false,
+        "stop_requested": false,
+        "unresolved_effects": false
+      },
+      "dependencies": [],
+      "disposition": "active",
+      "note": "DEMONSTRATION ONLY: invented coordination fixture; no experiment was run and these digests do not identify scientific artifacts.",
+      "observed_at": "2026-10-19T00:01:01Z",
+      "operation_id": "demo-negative-001-r1",
+      "phase": "Proposed",
+      "previous_record_sha256": null,
+      "related": [],
+      "source_reported_at": "2026-10-19T00:01:00Z",
+      "task_id": "DEMO-NEGATIVE-001",
+      "task_kind": "experiment",
+      "task_revision": 1,
+      "task_spec": "sha256:ca9f64fef329ab5d7b26cc4052f295cba817b04ca9f8c8dc92340402b31f62bd"
+    },
+    {
+      "assessment": null,
+      "binding": {
+        "analysis": "sha256:696b18907a8aa619bf03cd72c6c0f45f66d3ee4fcb5ccc66e3336234cbc2477e",
+        "candidate": "sha256:eec8ab70aef1d7c8e4007d99674557d28337304c5d39b01faaeeca22c3b4caa7",
+        "environment": "sha256:00814cd2d5a88ce5dd5550a4a773910100e14566d1ea17f42f79734826ae272a",
+        "evaluator": "sha256:3c0bca5b757c5c14667e55096d2b1101a4838a459153feb4cd5880925c89c9f4",
+        "inputs": "sha256:c381f1c58f98be3e40daa65be6e0e1706b2d1c269e4b4d41a000e2322e1e34fb",
+        "protocol": "sha256:62f6d629ee3cd1690c3f87fa1f553137edce23f99c1bb96fb0dca2bc8f3e8cfb",
+        "task_spec": "sha256:ca9f64fef329ab5d7b26cc4052f295cba817b04ca9f8c8dc92340402b31f62bd"
+      },
+      "blockers": [],
+      "control": {
+        "hold_requested": false,
+        "resolution_receipt": null,
+        "stop_acknowledged": false,
+        "stop_confirmed": false,
+        "stop_requested": false,
+        "unresolved_effects": false
+      },
+      "dependencies": [],
+      "disposition": "active",
+      "note": "DEMONSTRATION ONLY: invented coordination fixture; no experiment was run and these digests do not identify scientific artifacts.",
+      "observed_at": "2026-10-19T00:02:01Z",
+      "operation_id": "demo-negative-001-r2",
+      "phase": "Investigating",
+      "previous_record_sha256": "06e981c5f9f0a796769f4a2d0e894c2a8944b80fefc3afdea6985ca52647c36a",
+      "related": [],
+      "source_reported_at": "2026-10-19T00:02:00Z",
+      "task_id": "DEMO-NEGATIVE-001",
+      "task_kind": "experiment",
+      "task_revision": 2,
+      "task_spec": "sha256:ca9f64fef329ab5d7b26cc4052f295cba817b04ca9f8c8dc92340402b31f62bd"
+    },
+    {
+      "assessment": null,
+      "binding": {
+        "analysis": "sha256:696b18907a8aa619bf03cd72c6c0f45f66d3ee4fcb5ccc66e3336234cbc2477e",
+        "candidate": "sha256:eec8ab70aef1d7c8e4007d99674557d28337304c5d39b01faaeeca22c3b4caa7",
+        "environment": "sha256:00814cd2d5a88ce5dd5550a4a773910100e14566d1ea17f42f79734826ae272a",
+        "evaluator": "sha256:3c0bca5b757c5c14667e55096d2b1101a4838a459153feb4cd5880925c89c9f4",
+        "inputs": "sha256:c381f1c58f98be3e40daa65be6e0e1706b2d1c269e4b4d41a000e2322e1e34fb",
+        "protocol": "sha256:62f6d629ee3cd1690c3f87fa1f553137edce23f99c1bb96fb0dca2bc8f3e8cfb",
+        "task_spec": "sha256:ca9f64fef329ab5d7b26cc4052f295cba817b04ca9f8c8dc92340402b31f62bd"
+      },
+      "blockers": [],
+      "control": {
+        "hold_requested": false,
+        "resolution_receipt": null,
+        "stop_acknowledged": false,
+        "stop_confirmed": false,
+        "stop_requested": false,
+        "unresolved_effects": false
+      },
+      "dependencies": [],
+      "disposition": "active",
+      "note": "DEMONSTRATION ONLY: invented coordination fixture; no experiment was run and these digests do not identify scientific artifacts.",
+      "observed_at": "2026-10-19T00:03:01Z",
+      "operation_id": "demo-negative-001-r3",
+      "phase": "Authorized",
+      "previous_record_sha256": "ceac566da5fe5555bf8f8f03f214e151c29f17825642b3900fa444e5c3ed16b6",
+      "related": [],
+      "source_reported_at": "2026-10-19T00:03:00Z",
+      "task_id": "DEMO-NEGATIVE-001",
+      "task_kind": "experiment",
+      "task_revision": 3,
+      "task_spec": "sha256:ca9f64fef329ab5d7b26cc4052f295cba817b04ca9f8c8dc92340402b31f62bd"
+    },
+    {
+      "assessment": null,
+      "binding": {
+        "analysis": "sha256:696b18907a8aa619bf03cd72c6c0f45f66d3ee4fcb5ccc66e3336234cbc2477e",
+        "candidate": "sha256:eec8ab70aef1d7c8e4007d99674557d28337304c5d39b01faaeeca22c3b4caa7",
+        "environment": "sha256:00814cd2d5a88ce5dd5550a4a773910100e14566d1ea17f42f79734826ae272a",
+        "evaluator": "sha256:3c0bca5b757c5c14667e55096d2b1101a4838a459153feb4cd5880925c89c9f4",
+        "inputs": "sha256:c381f1c58f98be3e40daa65be6e0e1706b2d1c269e4b4d41a000e2322e1e34fb",
+        "protocol": "sha256:62f6d629ee3cd1690c3f87fa1f553137edce23f99c1bb96fb0dca2bc8f3e8cfb",
+        "task_spec": "sha256:ca9f64fef329ab5d7b26cc4052f295cba817b04ca9f8c8dc92340402b31f62bd"
+      },
+      "blockers": [],
+      "control": {
+        "hold_requested": false,
+        "resolution_receipt": null,
+        "stop_acknowledged": false,
+        "stop_confirmed": false,
+        "stop_requested": false,
+        "unresolved_effects": false
+      },
+      "dependencies": [],
+      "disposition": "active",
+      "note": "DEMONSTRATION ONLY: invented coordination fixture; no experiment was run and these digests do not identify scientific artifacts.",
+      "observed_at": "2026-10-19T00:04:01Z",
+      "operation_id": "demo-negative-001-r4",
+      "phase": "Implementing",
+      "previous_record_sha256": "1d3d5a6d0f61d8d22761e65ce7b1cd7419936ad56c9b0a0c3aeee159cc8e997c",
+      "related": [],
+      "source_reported_at": "2026-10-19T00:04:00Z",
+      "task_id": "DEMO-NEGATIVE-001",
+      "task_kind": "experiment",
+      "task_revision": 4,
+      "task_spec": "sha256:ca9f64fef329ab5d7b26cc4052f295cba817b04ca9f8c8dc92340402b31f62bd"
+    },
+    {
+      "assessment": null,
+      "binding": {
+        "analysis": "sha256:696b18907a8aa619bf03cd72c6c0f45f66d3ee4fcb5ccc66e3336234cbc2477e",
+        "candidate": "sha256:eec8ab70aef1d7c8e4007d99674557d28337304c5d39b01faaeeca22c3b4caa7",
+        "environment": "sha256:00814cd2d5a88ce5dd5550a4a773910100e14566d1ea17f42f79734826ae272a",
+        "evaluator": "sha256:3c0bca5b757c5c14667e55096d2b1101a4838a459153feb4cd5880925c89c9f4",
+        "inputs": "sha256:c381f1c58f98be3e40daa65be6e0e1706b2d1c269e4b4d41a000e2322e1e34fb",
+        "protocol": "sha256:62f6d629ee3cd1690c3f87fa1f553137edce23f99c1bb96fb0dca2bc8f3e8cfb",
+        "task_spec": "sha256:ca9f64fef329ab5d7b26cc4052f295cba817b04ca9f8c8dc92340402b31f62bd"
+      },
+      "blockers": [],
+      "control": {
+        "hold_requested": false,
+        "resolution_receipt": null,
+        "stop_acknowledged": false,
+        "stop_confirmed": false,
+        "stop_requested": false,
+        "unresolved_effects": false
+      },
+      "dependencies": [],
+      "disposition": "active",
+      "note": "DEMONSTRATION ONLY: invented coordination fixture; no experiment was run and these digests do not identify scientific artifacts.",
+      "observed_at": "2026-10-19T00:05:01Z",
+      "operation_id": "demo-negative-001-r5",
+      "phase": "Submitted",
+      "previous_record_sha256": "c9d494ca132d40b82b4649ad15f459e63d78025319911956a2c3404357eb1a69",
+      "related": [],
+      "source_reported_at": "2026-10-19T00:05:00Z",
+      "task_id": "DEMO-NEGATIVE-001",
+      "task_kind": "experiment",
+      "task_revision": 5,
+      "task_spec": "sha256:ca9f64fef329ab5d7b26cc4052f295cba817b04ca9f8c8dc92340402b31f62bd"
+    },
+    {
+      "assessment": {
+        "acceptance": "passed",
+        "binding": {
+          "analysis": "sha256:696b18907a8aa619bf03cd72c6c0f45f66d3ee4fcb5ccc66e3336234cbc2477e",
+          "candidate": "sha256:eec8ab70aef1d7c8e4007d99674557d28337304c5d39b01faaeeca22c3b4caa7",
+          "environment": "sha256:00814cd2d5a88ce5dd5550a4a773910100e14566d1ea17f42f79734826ae272a",
+          "evaluator": "sha256:3c0bca5b757c5c14667e55096d2b1101a4838a459153feb4cd5880925c89c9f4",
+          "inputs": "sha256:c381f1c58f98be3e40daa65be6e0e1706b2d1c269e4b4d41a000e2322e1e34fb",
+          "protocol": "sha256:62f6d629ee3cd1690c3f87fa1f553137edce23f99c1bb96fb0dca2bc8f3e8cfb",
+          "task_spec": "sha256:ca9f64fef329ab5d7b26cc4052f295cba817b04ca9f8c8dc92340402b31f62bd"
+        },
+        "receipt": "demo://receipts/illustrative-negative",
+        "reviewer": "demonstration reviewer metadata only",
+        "scientific_result": "weakens",
+        "technical_result": "pass"
+      },
+      "binding": {
+        "analysis": "sha256:696b18907a8aa619bf03cd72c6c0f45f66d3ee4fcb5ccc66e3336234cbc2477e",
+        "candidate": "sha256:eec8ab70aef1d7c8e4007d99674557d28337304c5d39b01faaeeca22c3b4caa7",
+        "environment": "sha256:00814cd2d5a88ce5dd5550a4a773910100e14566d1ea17f42f79734826ae272a",
+        "evaluator": "sha256:3c0bca5b757c5c14667e55096d2b1101a4838a459153feb4cd5880925c89c9f4",
+        "inputs": "sha256:c381f1c58f98be3e40daa65be6e0e1706b2d1c269e4b4d41a000e2322e1e34fb",
+        "protocol": "sha256:62f6d629ee3cd1690c3f87fa1f553137edce23f99c1bb96fb0dca2bc8f3e8cfb",
+        "task_spec": "sha256:ca9f64fef329ab5d7b26cc4052f295cba817b04ca9f8c8dc92340402b31f62bd"
+      },
+      "blockers": [],
+      "control": {
+        "hold_requested": false,
+        "resolution_receipt": null,
+        "stop_acknowledged": false,
+        "stop_confirmed": false,
+        "stop_requested": false,
+        "unresolved_effects": false
+      },
+      "dependencies": [],
+      "disposition": "active",
+      "note": "DEMONSTRATION ONLY: invented coordination fixture; no experiment was run and these digests do not identify scientific artifacts.",
+      "observed_at": "2026-10-19T00:06:01Z",
+      "operation_id": "demo-negative-001-r6",
+      "phase": "Evaluating",
+      "previous_record_sha256": "efbb0ab2ea0bc9488e33eb919966209a079463e7acc0263a453ecc84ea9ed709",
+      "related": [],
+      "source_reported_at": "2026-10-19T00:06:00Z",
+      "task_id": "DEMO-NEGATIVE-001",
+      "task_kind": "experiment",
+      "task_revision": 6,
+      "task_spec": "sha256:ca9f64fef329ab5d7b26cc4052f295cba817b04ca9f8c8dc92340402b31f62bd"
+    },
+    {
+      "assessment": {
+        "acceptance": "passed",
+        "binding": {
+          "analysis": "sha256:696b18907a8aa619bf03cd72c6c0f45f66d3ee4fcb5ccc66e3336234cbc2477e",
+          "candidate": "sha256:eec8ab70aef1d7c8e4007d99674557d28337304c5d39b01faaeeca22c3b4caa7",
+          "environment": "sha256:00814cd2d5a88ce5dd5550a4a773910100e14566d1ea17f42f79734826ae272a",
+          "evaluator": "sha256:3c0bca5b757c5c14667e55096d2b1101a4838a459153feb4cd5880925c89c9f4",
+          "inputs": "sha256:c381f1c58f98be3e40daa65be6e0e1706b2d1c269e4b4d41a000e2322e1e34fb",
+          "protocol": "sha256:62f6d629ee3cd1690c3f87fa1f553137edce23f99c1bb96fb0dca2bc8f3e8cfb",
+          "task_spec": "sha256:ca9f64fef329ab5d7b26cc4052f295cba817b04ca9f8c8dc92340402b31f62bd"
+        },
+        "receipt": "demo://receipts/illustrative-negative",
+        "reviewer": "demonstration reviewer metadata only",
+        "scientific_result": "weakens",
+        "technical_result": "pass"
+      },
+      "binding": {
+        "analysis": "sha256:696b18907a8aa619bf03cd72c6c0f45f66d3ee4fcb5ccc66e3336234cbc2477e",
+        "candidate": "sha256:eec8ab70aef1d7c8e4007d99674557d28337304c5d39b01faaeeca22c3b4caa7",
+        "environment": "sha256:00814cd2d5a88ce5dd5550a4a773910100e14566d1ea17f42f79734826ae272a",
+        "evaluator": "sha256:3c0bca5b757c5c14667e55096d2b1101a4838a459153feb4cd5880925c89c9f4",
+        "inputs": "sha256:c381f1c58f98be3e40daa65be6e0e1706b2d1c269e4b4d41a000e2322e1e34fb",
+        "protocol": "sha256:62f6d629ee3cd1690c3f87fa1f553137edce23f99c1bb96fb0dca2bc8f3e8cfb",
+        "task_spec": "sha256:ca9f64fef329ab5d7b26cc4052f295cba817b04ca9f8c8dc92340402b31f62bd"
+      },
+      "blockers": [],
+      "control": {
+        "hold_requested": false,
+        "resolution_receipt": null,
+        "stop_acknowledged": false,
+        "stop_confirmed": false,
+        "stop_requested": false,
+        "unresolved_effects": false
+      },
+      "dependencies": [],
+      "disposition": "completed",
+      "note": "DEMONSTRATION ONLY: invented coordination fixture; no experiment was run and these digests do not identify scientific artifacts.",
+      "observed_at": "2026-10-19T00:07:01Z",
+      "operation_id": "demo-negative-001-r7",
+      "phase": "Accepted",
+      "previous_record_sha256": "d9773796764566a4a57b1babbde3343a3fe57b6f61488e7361846b0e63d8020c",
+      "related": [],
+      "source_reported_at": "2026-10-19T00:07:00Z",
+      "task_id": "DEMO-NEGATIVE-001",
+      "task_kind": "experiment",
+      "task_revision": 7,
+      "task_spec": "sha256:ca9f64fef329ab5d7b26cc4052f295cba817b04ca9f8c8dc92340402b31f62bd"
+    }
+  ],
+  "schema_version": 1
+}

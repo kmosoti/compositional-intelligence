@@ -6,6 +6,8 @@ labels: []
 assignees: []
 ---
 **Question:**
+**Canonical EXP / HYP records and relevant revisions:**
+**Exploratory or confirmatory mode:**
 **Hypothesis / null:**
 **Baseline and candidates:**
 **Dataset and holdout:**
@@ -14,3 +16,8 @@ assignees: []
 **Stopping rule:**
 **Disconfirming evidence:**
 **Reproducibility requirements:**
+**Completion criterion if the result is negative, inconclusive, or the attempt is invalid:**
+**Protected material, shared resources, and unmet prerequisites:**
+**Canonical coordination record and next action:**
+
+This issue is a navigation and discussion surface. Issue membership/closure does not establish execution admission, independent acceptance, or architectural adoption.

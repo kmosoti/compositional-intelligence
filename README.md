@@ -38,6 +38,8 @@ Freeze the protocol and relevant versions for a particular comparison, preserve 
 - [Scientific method and experiments](docs/methodology.md)
 - [Candidate architecture](docs/architecture.md)
 - [Agent harness protocol](docs/agent-harness.md)
+- [Research coordination contract](docs/coordination.md)
+- [GitHub coordination: research and failure analysis](docs/research/github-coordination-review.md)
 - [Agent instructions](AGENTS.md)
 - [Research hypotheses](research/README.md)
 - [Experiments](experiments/README.md)
@@ -68,7 +70,9 @@ cargo test --workspace
 cargo clippy --workspace --all-targets -- -D warnings
 ```
 
-This repo does not yet implement an autonomous agent controller, independent sandbox evaluator, model inference pipeline, benchmarking harness, or research result. Their contracts and experiments can be developed incrementally.
+The [coordination and record guide](harness/coordination/README.md) documents the offline Python checks, experiment lifecycle, and clearly labeled synthetic examples. These checks exercise record consistency; no operational coordination records or experiment results are supplied by the examples.
+
+This repo does not yet implement an autonomous agent controller, independent sandbox evaluator, deployed GitHub Project writer, model inference pipeline, benchmarking harness, or research result. Their contracts and experiments can be developed incrementally.
 
 ## Wiki
 
