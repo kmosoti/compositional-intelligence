@@ -1,0 +1,41 @@
+{
+  "id": "EXP-0002",
+  "status": "planned",
+  "hypothesis": "HYP-0002",
+  "question": "Does an acquired reusable abstraction improve held-out causal transfer under matched observations and resource caps?",
+  "baseline": "Competitive model plus retrieval and deterministic tools, selected on development tasks",
+  "candidate": "The baseline plus an acquired reusable representation and an explicit mechanism that uses it",
+  "metrics": ["paired_task_success", "interventional_prediction_accuracy", "observations_to_criterion", "latency_ms", "acquisition_cost", "execution_cost", "peak_host_bytes", "peak_gpu_bytes", "energy_if_measurable"],
+  "dataset": {
+    "source": "Proposed synthetic causal-world generator; not implemented or frozen",
+    "split_hash": null,
+    "holdout": "24 tasks: eight novel recombinations, eight surface/domain transfers, eight held-out causal structures",
+    "generator_version": null
+  },
+  "protocol": {
+    "version": "draft-1",
+    "kind": "exploratory_pilot",
+    "random_seeds": [],
+    "sample_count": 24,
+    "stochastic_repetitions": 2,
+    "maximum_runs": 224,
+    "resource_caps": {
+      "per_run_wall_seconds": 180,
+      "per_run_cpu_threads": 2,
+      "per_run_host_gib": 16,
+      "per_run_gpu_gib": 4,
+      "per_run_tool_calls": 24,
+      "per_run_model_input_tokens": 32768,
+      "per_run_model_output_tokens": 2048,
+      "total_wall_hours": 12,
+      "total_model_input_tokens": 7340032,
+      "total_model_output_tokens": 458752,
+      "paid_spend_usd": 0
+    },
+    "stopping_rule": "Complete the frozen run matrix once; stop at a hard resource cap or safety/validity failure, retain all partial outcomes, and do not claim the incomplete matrix confirms the hypothesis.",
+    "pre_registered": false,
+    "freeze_required": ["generator and splits", "paired task and sampling seeds", "equal raw acquisition evidence and acquisition-budget opportunities", "exact model and tools", "representation and intervention semantics", "converted-content provenance and availability time", "environment and measured device limits", "cost accounting including representation acquisition", "run matrix and analysis script", "independent evaluation boundary"]
+  },
+  "results": null,
+  "notes": "Planned proposal only. No generator, execution, scientific result, or permanent architecture is asserted. Paid calls require a separately authorized amended budget."
+}

@@ -2,6 +2,8 @@
 
 The repository provides process instructions and templates. A trusted autonomous controller, isolated execution service and external evaluator have **not been implemented**.
 
+The [DeepSeek Harness, Pi, and Codex source review](research/agent-harness-review.md) supplies concrete implementation evidence and candidate mechanisms. Those implementations are references for experiments, not mandatory dependencies or proof of cognitive capability. The [research program](research-program.md) separates reliability of the experimental instrument from the intelligence claims evaluated with it.
+
 ## Three authorities
 - **Worker:** scoped modifications and evidence proposal.
 - **Evaluator:** owner of frozen tests, scientific protocol and comparison baselines.

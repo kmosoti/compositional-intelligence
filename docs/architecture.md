@@ -1,5 +1,7 @@
 # Candidate cognitive architecture (not adopted)
 
+This document records candidates, not a target that experiments must vindicate. The [research program](research-program.md) may revise the decomposition or replace it wholesale. Existing crates, interface names, and biological analogies do not establish scientific necessity. Per-run contracts remain fixed only for interpretable comparisons; future architecture remains open.
+
 ## Functional roles, not literal brain replicas
 Perception/encoding, associative memory, relational knowledge, hypothesis generation, candidate evaluation, prediction, conflict detection and action execution are useful *problem decompositions*. They need not be separate neural models or crates.
 
@@ -18,6 +20,8 @@ Do not assume heterogeneous embeddings, HDC signatures and latent neural states 
 
 ## Control plane
 Signal-driven candidate generation and evaluation, with deterministic permissions and resource arbitration. This is not a magical absence of coordination. Agent/tool calls must be authorized; unknown or risky actions cannot bypass policy.
+
+Test local processing, selective shared access, and metacognitive control as separate mechanisms. Fast/slow, verbal/nonverbal, local/shared, and conscious/nonconscious are different axes. The [functional control experiment](../experiments/EXP-0003/protocol.md) does not classify software as conscious.
 
 ## Dependency architecture
 Use hexagonal separation where it creates independently testable behavior or replaceable backend dependencies. Static specialization and zero allocation belong only in *measured* hotspots. Do not require every composite to own neither state nor algorithms.

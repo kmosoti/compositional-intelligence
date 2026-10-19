@@ -4,7 +4,22 @@ Applies to **all** research and coding agents. Canonical instructions; vendor-sp
 
 ## Objective
 
-Help establish whether compositional, heterogeneous intelligence provides objectively better capability per resource than competitive baselines. Do not treat the brain metaphor, a model family, recursive hexagons or any particular inference architecture as a settled choice.
+Investigate which mechanisms and combinations produce reliable, transferable problem solving, useful learning, and capability per resource. Establish whether heterogeneous composition helps, where it fails, and what simpler alternatives explain the results. Do not treat the brain metaphor, a model family, recursive hexagons or any particular inference architecture as a settled choice.
+
+## Research governs direction
+
+The project's technical direction and changes are governed by research, experiments, critical analysis, and renewed research. **The current code is not an oracle.** It records one implementation state; it does not establish the correct architecture, the limits of intelligence, or the set of admissible next ideas.
+
+- Treat existing crates, interfaces, languages, models, baselines, representations, coordination topologies, and architecture documents as revisable research artifacts. A justified investigation may replace the architecture substantially or completely.
+- Source inspection establishes what a pinned implementation does. It does not establish that the mechanism is scientifically necessary, optimal, intelligent, or worth retaining. Absence from the code is not evidence that an alternative cannot work.
+- Read literature and seek counterevidence beyond the current implementation. Treat Krakauer's account and competing theories as hypotheses and operational frameworks, not founding doctrines.
+- Before a material change of direction, record the question, supporting evidence, alternatives, assumptions, expected discriminator, and cost of the smallest informative test. A theoretical contradiction or demonstrated infeasibility can justify rejection without building every candidate.
+- Exploratory implementations are permitted to generate missing evidence. They need a question and proportionate rationale, not already-positive results. Building a candidate and scientifically adopting it are separate decisions.
+- Freeze a protocol, evaluator, and relevant versions for an individual confirmatory comparison. Do not freeze the project's architecture. Amend an inadequate protocol prospectively, retain the old version and results, and label exploratory work honestly.
+- Preserve negative results, failed candidate evidence, and the rationale for replacements. Code may be removed from the active design while its history remains inspectable.
+- User goals, resource limits, authorized scope, evidence integrity, and independent acceptance remain constraints on experiments. A research rationale does not grant additional permissions.
+
+See [research program](docs/research-program.md) and [ADR 0002](docs/adr/0002-research-governs-implementation.md). Routine fixes need proportionate verification; this policy does not require a new scientific study for every small edit.
 
 ## Evidence hierarchy
 
@@ -22,7 +37,7 @@ Read this file, `README.md`, the relevant single hypothesis or experiment, and o
 
 ## Mandatory engineering rules
 
-- Use Rust for core runtime where viable; native libraries through explicit boundaries are acceptable. Do not reinvent a fast primitive before identifying its measured limitation.
+- Rust is the current core-runtime starting point, subject to measured suitability; alternative implementations and native libraries through explicit boundaries are admissible research candidates. Do not reinvent a fast primitive before identifying its measured limitation.
 - Design replaceable *behavioral* contracts. Record model version, representation, normalization, metric, device and numeric precision when relevant.
 - Prefer safe Rust. Any unsafe code must be justified, reviewed and tested under applicable tooling; Miri is not a proof of soundness.
 - Dynamic dispatch, standard collections, allocations and `std` are permissible unless a measured contract rules them out.

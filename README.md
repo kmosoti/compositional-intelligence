@@ -2,7 +2,7 @@
 
 **Finite means. Novel compositions. Measured intelligence per unit of computation.**
 
-A Rust-first research project investigating whether heterogeneous combinations of compact neural models, retrieval, symbolic computation, probabilistic inference, graphs and associative representations can outperform a small language-model agent on consumer hardware.
+A research and experimentation project combining the science of intelligence with the engineering of systems that learn, represent, reason, and act. It investigates whether combinations of neural models, retrieval, symbolic computation, probabilistic inference, graphs, memory, and other mechanisms produce transferable competence and useful capability under bounded resources. Rust and consumer hardware are the current implementation starting points.
 
 **Status: inception / research infrastructure.** No cognitive system has been demonstrated, benchmarked, trained, or released here. All proposed mechanisms remain hypotheses. There are **no release milestones or alpha versions**.
 
@@ -12,24 +12,34 @@ What is the smallest set of complementary computational mechanisms that can acqu
 
 The linguistic idea of making unbounded use of finite means motivates tests of **compositional generalization**, not an assumption of intelligence.
 
+## What governs the project
+
+**Research → experiments → analysis → revised research governs the technical direction. The code is not an oracle.** The current architecture can change rapidly, including substantial replacement, when evidence or a better experiment justifies it. Existing code describes a present instrument; it does not determine what the science must conclude.
+
+Freeze the protocol and relevant versions for a particular comparison, preserve its evidence, and revise the next experiment openly. A green test establishes only the behavior it exercises. It cannot make a cognitive theory true. See the [research program](docs/research-program.md) and [governance decision](docs/adr/0002-research-governs-implementation.md).
+
 ## Research principles
 
-1. Measure against a simple, competitive baseline: a quantized SLM with retrieval and deterministic tools.
+1. Measure against simple, competitive baselines appropriate to the question; a quantized SLM with retrieval and deterministic tools is the current starting comparator.
 2. Treat neural, neuro-symbolic, hyperdimensional, graph and probabilistic mechanisms as competing *candidates*, not compulsory modules.
 3. Separate facts, inference, hypotheses, predictions and unknowns. Keep source/provenance references.
 4. Compare end-to-end correctness, held-out generalization, latency, memory, energy and total cost, not attractive architectural diagrams.
 5. Admit negative results and reject mechanisms that fail controlled comparison.
 6. Separate agent-produced patches from independent acceptance and scientific interpretation.
-7. Optimize for the starting machine: RTX 3060 Laptop GPU (6 GB), 32 GB RAM, Intel i7-10750H. Verify actual device limits.
+7. Record the starting machine: RTX 3060 Laptop GPU (6 GB), 32 GB RAM, Intel i7-10750H. Verify actual limits and report which conclusions depend on this resource envelope.
+8. Separate task capability, transfer, learning, metacognition, conscious access, and subjective experience. No architecture label or benchmark score settles all of them.
 
 ## Start here
 
 - [Research charter](docs/research-charter.md)
+- [Integrated research program](docs/research-program.md)
+- [David Krakauer: intelligence, understanding, and cognitive tools](docs/research/krakauer-intelligence.md)
+- [DeepSeek Harness, Pi, and Codex: source review](docs/research/agent-harness-review.md)
 - [Scientific method and experiments](docs/methodology.md)
 - [Candidate architecture](docs/architecture.md)
 - [Agent harness protocol](docs/agent-harness.md)
 - [Agent instructions](AGENTS.md)
-- [Research hypotheses](research/HYP-0001.md)
+- [Research hypotheses](research/README.md)
 - [Experiments](experiments/README.md)
 - [Wiki source pages](wiki/Home.md)
 
@@ -40,7 +50,7 @@ The linguistic idea of making unbounded use of finite means motivates tests of *
 | `AGENTS.md` | Authoritative vendor-neutral instructions |
 | `.agents/skills/` | Reusable Agent Skills, one focused `SKILL.md` each |
 | `.agents/roles/` | Task profiles, not permanent agent hierarchy |
-| `docs/` | Methodology, architecture alternatives and engineering records |
+| `docs/` | Research program, literature and source reviews, methodology, architecture alternatives and engineering records |
 | `research/` | Registered hypotheses and counterexamples |
 | `experiments/` | Protocols, manifests, results and negative findings |
 | `crates/` | Minimal Rust types only, not a validated cognition system |

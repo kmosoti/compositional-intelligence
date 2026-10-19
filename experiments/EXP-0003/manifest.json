@@ -1,0 +1,55 @@
+{
+  "id": "EXP-0003",
+  "status": "planned",
+  "hypothesis": "HYP-0003",
+  "question": "Do selective sharing and uncertainty-triggered deliberation improve policy utility under common resource caps relative to simpler and development-frequency random controls?",
+  "baseline": "Local processing with always, never, fixed-threshold, and development-frequency random escalation controls",
+  "candidate": "Selective shared evidence plus adaptive deliberation",
+  "metrics": ["paired_task_success", "stale_action_rate", "verification_calls", "communication_bytes", "latency_ms", "original_proposal_brier_score", "original_proposal_risk_coverage", "actor_execution_cost", "offline_evaluation_cost"],
+  "dataset": {
+    "source": "Proposed controlled tasks with conflicting, delayed, and costly observations",
+    "split_hash": null,
+    "holdout": "12 tasks, balanced over evidence conflict, stale observations, and tool/deadline changes"
+  },
+  "protocol": {
+    "version": "draft-1",
+    "kind": "exploratory_pilot",
+    "random_seeds": [],
+    "sample_count": 12,
+    "stochastic_repetitions": 2,
+    "maximum_runs": 240,
+    "primary_estimand": "Paired accepted task success as policy utility under common caps; actual cost reported separately, not a claim of matched realized verification counts",
+    "random_control": "Freeze escalation frequency and random positions from matched development episodes; no holdout-derived count selection",
+    "confidence_labels": {
+      "coverage": "Every original pre-escalation proposal in every episode, whether or not the actor verifies it",
+      "target": "Frozen acceptance event for the original proposal evaluated against its captured pre-escalation state, without later repair",
+      "timing": "Record proposal and confidence before escalation; obtain independent labels offline without exposing them to the actor",
+      "cost_accounting": "Separate offline evaluation cost from decision-path verification cost and report both plus their total"
+    },
+    "resource_caps": {
+      "per_run_wall_seconds": 120,
+      "per_run_cpu_threads": 2,
+      "per_run_host_gib": 16,
+      "per_run_gpu_gib": 4,
+      "per_run_tool_calls": 20,
+      "per_run_model_input_tokens": 32768,
+      "per_run_model_output_tokens": 2048,
+      "total_wall_hours": 9,
+      "total_model_input_tokens": 7864320,
+      "total_model_output_tokens": 491520,
+      "paid_spend_usd": 0
+    },
+    "offline_evaluation_resource_caps": {
+      "wall_hours": 1,
+      "cpu_threads": 2,
+      "host_gib": 4,
+      "model_calls": 0,
+      "paid_spend_usd": 0
+    },
+    "stopping_rule": "Complete the frozen matrix; stop on cap or validity failure without efficacy peeking; retain incomplete blocks and all failures.",
+    "pre_registered": false,
+    "freeze_required": ["information and escalation semantics", "task and sampling seeds", "development-frequency random schedule", "simple threshold baseline", "original-proposal confidence event and complete independent labeling", "pre-escalation state capture and offline evaluator isolation", "exact models and hardware", "actor and offline evaluator cost ledgers and caps", "analysis and run matrix"]
+  },
+  "results": null,
+  "notes": "Functional information-access and control experiment only. No conscious/subconscious ontology, consciousness score, or permanent hierarchy is claimed."
+}

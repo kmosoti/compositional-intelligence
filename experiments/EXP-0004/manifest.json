@@ -1,0 +1,40 @@
+{
+  "id": "EXP-0004",
+  "status": "planned",
+  "hypothesis": "HYP-0004",
+  "question": "Does reconstruction-oriented assistance improve delayed unaided transfer relative to answer delegation and reference-based practice?",
+  "baseline": "Direct answer delegation and ordinary documentation/practice",
+  "candidate": "Prediction, reconstruction, and verification assistance",
+  "learner_locus": "One human researcher in the initial exploratory pilot",
+  "retention_boundary": "Human performance after assistance withdrawal; acquisition artifacts and AI are unavailable during assessment; the same editor/compiler/test interface remains available",
+  "metrics": ["delayed_transfer_correctness", "assisted_task_correctness", "immediate_unaided_correctness", "mechanism_explanation", "latency_ms", "confidence_brier_score", "assistance_exposure"],
+  "dataset": {
+    "source": "Proposed matched programming/debugging task families",
+    "split_hash": null,
+    "holdout": "Separate immediate and seven-day transfer items, hidden from learner and assistant during acquisition"
+  },
+  "protocol": {
+    "version": "draft-1",
+    "kind": "single_person_exploratory_pilot",
+    "random_seeds": [],
+    "sample_count": 12,
+    "participants": 1,
+    "sessions_per_condition": 4,
+    "resource_caps": {
+      "acquisition_minutes_per_session": 25,
+      "immediate_assessment_minutes_per_session": 10,
+      "delayed_assessment_minutes_per_session": 10,
+      "delayed_assessment_days": 7,
+      "delay_tolerance_days": 1,
+      "total_participant_minutes": 540,
+      "assistant_input_tokens_per_acquisition_session": 32768,
+      "assistant_output_tokens_per_acquisition_session": 4096,
+      "paid_spend_usd": 0
+    },
+    "stopping_rule": "Twelve acquisition sessions plus their scheduled assessments; no efficacy-based stopping. Record missed sessions, attrition, extra practice, and capped or incomplete assessments.",
+    "pre_registered": false,
+    "freeze_required": ["participant agreement and practical schedule", "task matching and prior-skill measures", "randomized family-to-condition assignment within matched blocks", "condition order", "overlapping acquisition and delayed-assessment schedule", "immediate-assessment feedback policy", "assessment answer-key separation", "permitted tools and retained materials", "scoring rubric and blinded assessor", "assistant version and complete intervention/exposure history", "analysis and missing-data policy"]
+  },
+  "results": null,
+  "notes": "Plan only; no human sessions scheduled or performed. Single-person results do not establish population effects, hysteresis, cognitive decline, or consciousness. Machine-learning retention requires a separate learner/state boundary and protocol."
+}
