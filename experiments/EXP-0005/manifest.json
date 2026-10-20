@@ -1,0 +1,47 @@
+{
+  "id": "EXP-0005",
+  "status": "planned",
+  "hypothesis": "HYP-0005",
+  "question": "Do recoverable evidence projections and preauthorized deterministic tool sequences improve the quality-cost frontier of the same native LLM harness?",
+  "baseline": "Contemporary pinned native harness with ordinary tools and normal context behavior; identical safety controls and evidence access",
+  "candidate": "Factorial comparison: recoverable receipts (R), deterministic tool flow (D), and their combination (RD)",
+  "learner_locus": "Agent system state and optional procedures, not hosted model weights",
+  "retention_boundary": "Separate fresh-task sessions and repeated sequential-workload sessions; no memory or skill leakage across arms",
+  "metrics": ["verified_task_success", "critical_policy_violations", "paired_solve_overlap", "known_input_tokens", "cached_input_tokens", "known_output_tokens", "reasoning_subset_tokens", "unknown_usage_requests", "all_attempt_requests", "wall_time_ms", "archive_bytes", "retrieval_calls", "decision_recovery_accuracy", "cache_prefix_churn", "measured_cost_if_available"],
+  "dataset": {
+    "source": "Prospective generated software repair and evidence-retrieval task families; versions unresolved",
+    "split_hash": null,
+    "holdout": "Evaluator-controlled unseen families and recombinations; development feedback never reclassified as holdout"
+  },
+  "protocol": {
+    "version": "draft-1",
+    "kind": "exploratory_instrument_pilot_then_separately_frozen_confirmatory_comparison",
+    "pre_registered": false,
+    "random_seeds": [],
+    "sample_count": null,
+    "resource_caps": {
+      "paid_spend_usd": 0,
+      "provider_calls_authorized": false,
+      "maximum_active_writers_per_workspace": 1,
+      "candidate_attempt_cap_proposed": 3,
+      "per_episode_time_and_token_limits": "Must be fixed before any provider run"
+    },
+    "stopping_rule": "Freeze finite task, repeat, retry, time and resource limits before execution; no success-based early stopping. Preserve failed, censored and unknown outcomes.",
+    "freeze_required": [
+      "task generator and family split identities",
+      "model and harness versions and supported context-control surface",
+      "evaluator identity and protected scope",
+      "arm order and fresh versus sequential session schedules",
+      "independent repeats and session-level analysis unit",
+      "sample size and power rationale",
+      "quality noninferiority margin and material cost effect",
+      "usage schema including cache write/read and reasoning accounting",
+      "authorization and enforceable resource limits",
+      "missing-data exclusion and stopping rules",
+      "evidence retention privacy access and recovery policies",
+      "analysis version and independent review"
+    ]
+  },
+  "results": null,
+  "notes": "Design only. HELIX is external exploratory evidence, not our baseline or a reproduced result. EXP-0001 through EXP-0004 remain unchanged. No model runs, installations, automatic API fallback or release are authorized by this manifest."
+}

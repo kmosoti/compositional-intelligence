@@ -1,85 +1,66 @@
 # Compositional Intelligence
 
-**Finite means. Novel compositions. Measured intelligence per unit of computation.**
+**Use models for unfamiliar work. Preserve evidence. Test reusable mechanisms.**
 
-A research and experimentation project combining the science of intelligence with the engineering of systems that learn, represent, reason, and act. It investigates whether combinations of neural models, retrieval, symbolic computation, probabilistic inference, graphs, memory, and other mechanisms produce transferable competence and useful capability under bounded resources. Rust and consumer hardware are the current implementation starting points.
+A research project building a persistent agent around existing LLM harnesses, exact tools, evidence-linked memory, and independently evaluated procedures. The agent is an experimental instrument for investigating useful composition, transfer, adaptation, and capability under bounded resources. It is not a commitment to an LLM-centered theory of intelligence.
 
-**Status: inception / research infrastructure.** No cognitive system has been demonstrated, benchmarked, trained, or released here. All proposed mechanisms remain hypotheses. There are **no release milestones or alpha versions**.
+**Status: research infrastructure and design.** The repository contains instructions, minimal Rust types, templates, and offline consistency checks. It does not yet implement the proposed autonomous runtime, isolated evaluator, provider integrations, or context-evidence pipeline. No cognitive benefit or token saving has been demonstrated here. There are no alpha versions or release milestones.
 
-## Research question
+## Current approach
 
-What is the smallest set of complementary computational mechanisms that can acquire and preserve useful evidence, compose unfamiliar solutions, test consequences, select actions and adapt to experience while minimizing expensive autoregressive generation?
+Start with one persistent user-facing agent and one scoped native LLM worker. Keep task state, evidence, permissions, budgets, effects, and acceptance outside the model conversation. Use deterministic procedures for already-decided mechanical work; ask models to interpret, hypothesize, generate candidates, and handle unfamiliar composition.
 
-The linguistic idea of making unbounded use of finite means motivates tests of **compositional generalization**, not an assumption of intelligence.
+The first workload is bounded software engineering and research experimentation. The first comparator is the **same pinned native harness with ordinary tools and normal context behavior**, not an intentionally weak model. Local small-model and non-LLM alternatives remain valid competitors; earlier experiment plans retain their original scope.
 
-## What governs the project
+The research question is whether added mechanisms improve independently verified outcomes or lifecycle cost without unacceptable regressions. Minimizing tokens regardless of solved tasks is not the objective.
 
-**Research → experiments → analysis → revised research governs the technical direction. The code is not an oracle.** The current architecture can change rapidly, including substantial replacement, when evidence or a better experiment justifies it. Existing code describes a present instrument; it does not determine what the science must conclude.
+## What changes, and what does not
 
-Freeze the protocol and relevant versions for a particular comparison, preserve its evidence, and revise the next experiment openly. A green test establishes only the behavior it exercises. It cannot make a cognitive theory true. See the [research program](docs/research-program.md) and [governance decision](docs/adr/0002-research-governs-implementation.md).
+- Build a reliable single-task instrument before adding graph memory, executable skill acquisition, vector retrieval, or multiple workers.
+- Treat recoverable context projections and bounded deterministic tool flow as separately testable mechanisms. Exact archives do not guarantee that the model finds or uses the right evidence.
+- Use a shared work board and explicit event subscriptions, with deterministic admission and resource arbitration. No permanent LLM manager or fixed agent caste is required.
+- Keep raw observations, hypotheses, derived claims, and evaluation verdicts distinct. Similarity is not truth; a successful command is not task acceptance.
+- Preserve research-led revision: research, experiments, analysis, and renewed research govern direction. Current code and prior art are information, not oracles.
 
-## Research principles
-
-1. Measure against simple, competitive baselines appropriate to the question; a quantized SLM with retrieval and deterministic tools is the current starting comparator.
-2. Treat neural, neuro-symbolic, hyperdimensional, graph and probabilistic mechanisms as competing *candidates*, not compulsory modules.
-3. Separate facts, inference, hypotheses, predictions and unknowns. Keep source/provenance references.
-4. Compare end-to-end correctness, held-out generalization, latency, memory, energy and total cost, not attractive architectural diagrams.
-5. Admit negative results and reject mechanisms that fail controlled comparison.
-6. Separate agent-produced patches from independent acceptance and scientific interpretation.
-7. Record the starting machine: RTX 3060 Laptop GPU (6 GB), 32 GB RAM, Intel i7-10750H. Verify actual limits and report which conclusions depend on this resource envelope.
-8. Separate task capability, transfer, learning, metacognition, conscious access, and subjective experience. No architecture label or benchmark score settles all of them.
+[ADR 0004](docs/adr/0004-llm-assisted-research-instrument.md) explains this owner-directed implementation priority and its alternatives. It does not claim scientific adoption of the candidate architecture.
 
 ## Start here
 
-- [Research charter](docs/research-charter.md)
-- [Integrated research program](docs/research-program.md)
-- [David Krakauer: intelligence, understanding, and cognitive tools](docs/research/krakauer-intelligence.md)
-- [DeepSeek Harness, Pi, and Codex: source review](docs/research/agent-harness-review.md)
-- [Scientific method and experiments](docs/methodology.md)
-- [Candidate architecture](docs/architecture.md)
-- [Agent harness protocol](docs/agent-harness.md)
-- [Research coordination contract](docs/coordination.md)
-- [GitHub coordination: research and failure analysis](docs/research/github-coordination-review.md)
-- [Agent instructions](AGENTS.md)
-- [Research hypotheses](research/README.md)
-- [Experiments](experiments/README.md)
-- [Wiki source pages](wiki/Home.md)
+| Document | Purpose |
+| --- | --- |
+| [Research charter](docs/research-charter.md) | Scope, resources, and epistemic boundaries |
+| [Research program](docs/research-program.md) | Broad questions and competing mechanism families |
+| [Candidate architecture](docs/architecture.md) | Agent state, replaceable components, and representations |
+| [Runtime contract](docs/agent-harness.md) | Authority, integration, lifecycle, effects, and recovery |
+| [Context and evidence contract](docs/context-evidence.md) | Exact retention, partial receipts, retrieval, invalidation, and cache behavior |
+| [Implementation sequence](docs/implementation-plan.md) | Small vertical slices and explicit acceptance gates |
+| [HELIX assessment](docs/research/helix-context-review.md) | Source inspection, arithmetic, limits, and lessons worth testing |
+| [EXP-0005](experiments/EXP-0005/protocol.md) | Draft context/tool-flow comparison; no execution claimed |
+| [Scientific methodology](docs/methodology.md) | Experimental discipline |
+| [Coordination contract](docs/coordination.md) | Existing manual operating procedure and review boundaries |
+| [Agent instructions](AGENTS.md) | Vendor-neutral operating contract |
 
-## Repository organization
+The [hypothesis registry](research/README.md), [experiment registry](experiments/README.md), [Krakauer review](docs/research/krakauer-intelligence.md), and [harness source review](docs/research/agent-harness-review.md) remain part of the broader investigation. EXP-0001 through EXP-0004 are preserved, not retroactively rewritten to support the new priority.
 
-| Path | Role |
-|---|---|
-| `AGENTS.md` | Authoritative vendor-neutral instructions |
-| `.agents/skills/` | Reusable Agent Skills, one focused `SKILL.md` each |
-| `.agents/roles/` | Task profiles, not permanent agent hierarchy |
-| `docs/` | Research program, literature and source reviews, methodology, architecture alternatives and engineering records |
-| `research/` | Registered hypotheses and counterexamples |
-| `experiments/` | Protocols, manifests, results and negative findings |
-| `crates/` | Minimal Rust types only, not a validated cognition system |
-| `harness/` | Process contracts and future controller interfaces |
-| `wiki/` | Version-controlled GitHub Wiki source |
-| `.github/` | Issue/PR templates and foundational CI |
+## Initial engineering choices
 
-## Development
+Rust is the current host-runtime starting point. Use local SQLite records and content-addressed artifacts before introducing database servers or distributed coordination. Integrate Codex first through a supported, version-pinned interface; add Pi or Claude only through explicit capability-checked adapters. These are implementation candidates, not necessary properties of intelligence.
 
-Install Rust stable via rustup. The Cargo crates use edition 2024 and the unpublished placeholder package version `0.0.0`, which is *not* a product release.
+Hosted inference, local computation, API charges, subscription quota, tokens, and energy have separate accounting boundaries. Do not infer quota savings or joules from token reductions. No silent paid-API fallback, deployment, unrestricted self-modification, or recursive worker spawning is authorized by this design.
+
+## Development and records
 
 ```bash
 cargo fmt --all --check
 cargo test --workspace
 cargo clippy --workspace --all-targets -- -D warnings
+python scripts/check_research.py
 ```
 
-The [coordination and record guide](harness/coordination/README.md) documents the offline Python checks, experiment lifecycle, and clearly labeled synthetic examples. These checks exercise record consistency; no operational coordination records or experiment results are supplied by the examples.
+Cargo packages use the unpublished placeholder version `0.0.0`. The [coordination record guide](harness/coordination/README.md) covers the existing offline checks and synthetic examples. Structural checks do not authenticate evidence or demonstrate cognitive performance.
 
-This repo does not yet implement an autonomous agent controller, independent sandbox evaluator, deployed GitHub Project writer, model inference pipeline, benchmarking harness, or research result. Their contracts and experiments can be developed incrementally.
+Implementation, instrument acceptance, experimental outcome, and architectural adoption are separate states. Preserve negative results and unsuccessful attempts. A native worker saying it finished is not an evaluator accepting the exact candidate.
 
-## Wiki
+## Wiki and licensing
 
-The GitHub Wiki is a separate Git repository. Pages live under `wiki/` and can be published using `bash scripts/publish_wiki.sh` from an authenticated workstation. This main-branch commit does not itself update the live Wiki.
-
-## Contribution rules
-
-Read [AGENTS.md](AGENTS.md). Open hypotheses and experiments before adopting an architecture. Report uncertainty, conflicting evidence and validation limits. No agent may self-certify results.
-
-Licensed under the repository's existing MIT LICENSE.
+`wiki/` contains separately published Wiki sources. Updating this repository does not update the live GitHub Wiki. The repository retains its existing MIT license; external projects are cited, not vendored by this rewrite.
